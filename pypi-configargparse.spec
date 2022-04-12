@@ -4,7 +4,7 @@
 #
 Name     : pypi-configargparse
 Version  : 1.5.3
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/16/05/385451bc8d20a3aa1d8934b32bd65847c100849ebba397dbf6c74566b237/ConfigArgParse-1.5.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/16/05/385451bc8d20a3aa1d8934b32bd65847c100849ebba397dbf6c74566b237/ConfigArgParse-1.5.3.tar.gz
 Summary  : A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
@@ -17,9 +17,6 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pypi(mock)
 BuildRequires : pypi(pytest)
 BuildRequires : pypi(pyyaml)
-Provides: ConfigArgParse
-Provides: ConfigArgParse-python
-Provides: ConfigArgParse-python3
 
 %description
 --------------
@@ -60,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641425192
+export SOURCE_DATE_EPOCH=1649730616
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
