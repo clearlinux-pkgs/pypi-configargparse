@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-configargparse
-Version  : 1.5.5
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/3c/fb/bf200c55a1e7014577c37fa9cbfa0148f629762bb3acff56299d8c58cbc3/ConfigArgParse-1.5.5.tar.gz
-Source0  : https://files.pythonhosted.org/packages/3c/fb/bf200c55a1e7014577c37fa9cbfa0148f629762bb3acff56299d8c58cbc3/ConfigArgParse-1.5.5.tar.gz
+Version  : 1.7
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/70/8a/73f1008adfad01cb923255b924b1528727b8270e67cb4ef41eabdc7d783e/ConfigArgParse-1.7.tar.gz
+Source0  : https://files.pythonhosted.org/packages/70/8a/73f1008adfad01cb923255b924b1528727b8270e67cb4ef41eabdc7d783e/ConfigArgParse-1.7.tar.gz
 Summary  : A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
 Group    : Development/Tools
 License  : MIT
@@ -57,10 +57,10 @@ python3 components for the pypi-configargparse package.
 
 
 %prep
-%setup -q -n ConfigArgParse-1.5.5
-cd %{_builddir}/ConfigArgParse-1.5.5
+%setup -q -n ConfigArgParse-1.7
+cd %{_builddir}/ConfigArgParse-1.7
 pushd ..
-cp -a ConfigArgParse-1.5.5 buildavx2
+cp -a ConfigArgParse-1.7 buildavx2
 popd
 
 %build
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687965733
+export SOURCE_DATE_EPOCH=1690210504
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
